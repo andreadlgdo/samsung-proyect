@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+   <head>
+		<title>Mi formulario</title>
+		<link rel="stylesheet"  type="text/css"  href="style.css">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+		<script type="text/javascript" src="index.js"></script>
+   </head>
+   <body>
+	   <form >
+			<legend>Create Account</legend>
+			<label for="nombre">Nombre</label>
+			<div id="sectionNombre">
+				<img id="nombreIcon"/>
+				<input type="text" pattern="[A-Za-z]*" title="El nombre solo pueden ser letras" id="nombre" name="nombre">	 
+			</div>
+			<label for="email">Email</label>
+			<div id="sectionEmail">
+				<img id="emailIcon"/>
+				<input type="text" pattern="/\S+@\S+\.\S+/" id="email" name="email">
+			</div>
+			<label for="clave">Clave</label>
+			<div id="sectionClave">
+				<img id="claveIcon"/>
+				<input type="password" id="clave" name="clave">
+			</div>
+			<label for="claveConfirma">Confirme su clave</label>
+			<div id="sectionClaveConfirmacion">
+				<img id="claveConfirmaIcon"/>
+				<input type="password" id="claveConfirma" name="claveConfirma">
+			</div>
+			<input type="submit" id="submit" name="submit">
+	   </form>
+   </body>
+</html>
